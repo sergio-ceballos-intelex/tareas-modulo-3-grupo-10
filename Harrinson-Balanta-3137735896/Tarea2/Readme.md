@@ -56,4 +56,5 @@ for (inicialización; condición; expresión final) {
 Inicialización: Se ejecuta una sola vez al comienzo del bucle y se utiliza para inicializar el contador o cualquier otra variable necesaria. Por ejemplo, let i = 0; inicializa la variable i con el valor 0.
 Condición: Es una expresión booleana que se evalúa antes de cada iteración del bucle. Si la condición es verdadera, el código dentro del bucle se ejecutará; de lo contrario, el bucle se detendrá. Por ejemplo, i < 5 indica que el bucle se ejecutará mientras i sea menor que 5.
 Expresión final: Se ejecuta después de cada iteración y generalmente se utiliza para actualizar el contador o realizar otras operaciones. Por ejemplo, i++ incrementa el valor de i en 1 en cada iteración.
+
 por Harrinson Balanta
