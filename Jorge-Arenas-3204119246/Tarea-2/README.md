@@ -28,5 +28,5 @@ Ejemplo:
 
 try { // código que puede generar un error } catch (error) { // código a ejecutar si se produce un error }
 
-Estas son las principales estructuras de control en JavaScript. Cada una tiene su propio propósito y se utiliza en diferentes situaciones para controlar el flujo de ejecución del programa.
+Estas son las principales estructuras de control en JavaScript. Cada una tiene su propio propósito y se utiliza en diferentes situaciones para controlar el flujo de ejecución del Programa.
 
