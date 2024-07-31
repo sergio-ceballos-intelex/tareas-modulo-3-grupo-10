@@ -1,17 +1,17 @@
-let myArray =[]
-
-for(let contador = 1; contador <= 50; contador++){
-    myArray.push(contador);
-}
-console.log(myArray);
-
-
 // let myArray =[]
 
-// for(let contador = 1; contador <= 2000; contador++){
+// for(let contador = 1; contador <= 50; contador++){
 //     myArray.push(contador);
 // }
 // console.log(myArray);
+
+
+let myArray =[]
+
+for(let contador = 1; contador <= 2000; contador++){
+    myArray.push(contador);
+}
+console.log(myArray);
 
 
 // // Lista de números de ejemplo
