@@ -1,3 +1,5 @@
+// 1
+
 // let myArray =[]
 
 // for(let contador = 1; contador <= 50; contador++){
@@ -5,10 +7,21 @@
 // }
 // console.log(myArray);
 
+// 2
 
-let myArray =[]
+// let myArray =[]
 
-for(let contador = 1; contador <= 2000; contador++){
-    myArray.push(contador);
-}
-console.log(myArray);
+// for(let contador = 1; contador <= 2000; contador++){
+//     myArray.push(contador);
+// }
+// console.log(myArray);
+
+// Lista de números de ejemplo
+const numeros = [10, 20, 25, 30, 42, 55, 21, 22, 100, 200, 250];
+
+// Filtrar y mostrar solo los números que empiezan con '2'
+numeros.forEach(numero => {
+    if (numero.toString().startsWith('2')) {
+        console.log(numero);
+    }
+});
