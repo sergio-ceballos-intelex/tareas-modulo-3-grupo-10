@@ -25,3 +25,5 @@ numeros.forEach(numero => {
         console.log(numero);
     }
 });
+
+// subo la imagen
