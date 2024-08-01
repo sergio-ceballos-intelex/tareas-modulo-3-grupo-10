@@ -1,5 +1,5 @@
 
-for (let Contador = 0; Contador <= 50; Contador++){
+for (let Contador = 0; Contador <= 2000; Contador++){
     console.log(Contador);
 }
 
