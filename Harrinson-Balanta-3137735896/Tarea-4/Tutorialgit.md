@@ -92,5 +92,5 @@ Es de suma importancia conocer y practicar los diferentes comando que nos ayudan
 ### Autor
 | Nombre | Modulo |  Bootcamp |
 | -------- | ------ | -------- |
-| Harrinson Balanta   |Javascript Avanzado   | Kambcode        |
+| Harrinson Balanta c  |Javascript Avanzado   | Kambcode        |
 |01     | Julio  | 2024       |
