@@ -1,3 +1,5 @@
-for (let i = 1; i <= 2000; i++) {
-    console.log(i);
+for (let numero = 1; numero <= 2000; numero++) {
+    if (numero.toString().startsWith('2')) {
+        console.log(numero);
+    }
 }
