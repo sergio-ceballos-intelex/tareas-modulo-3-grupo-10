@@ -1,4 +1,11 @@
+function incioNumero(number) {
+    return number.toString().startsWith('2');
+}
+
 for (i=1 ;  i <= 2000;  i++){
-    console.log(i)
+    if (incioNumero(i)){
+        console.log(i)
+    }
+    
 }
 
