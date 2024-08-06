@@ -1,4 +1,4 @@
-#Inicialización, Agregado y Subida de Archivos a GitHub con Git
+# Inicialización, Agregado y Subida de Archivos a GitHub con Git
 
 Versionar archivos es un fundamento para el desarrollo colaborativo y gestión de proyectos, 
 algunos de sus puntos clave son:
