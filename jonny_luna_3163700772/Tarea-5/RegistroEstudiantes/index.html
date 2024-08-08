@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form id="estudiantes">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>    
+            </div>
+            <div>
+                <label for="edad">Edad:</label>
+                <input type="number" class="numero" id="edad" step="1" min="0" required>
+            </div>
+            <div>
+                <label for="promedio">Promedio de calificaciones:</label>
+                <input type="number" class="numero" id="promedio" step="0.1" min="0" max="10" required>
+            </div>
+            <div>
+                <label for="regular">¿Es regular?</label>
+                <input type="radio" id="regulaSi" name="esRegular" value="si" required>
+                <label for="regularSi">Si</label>
+                <input type="radio" id="regulaNo" name="esRegular" value="no" required>
+                <label for="regularNo">No</label>
+            </div>
+            <div>
+                <label for="materiasAprob">Cantidad de materias aprobadas:</label>
+                <input type="number" class="numero" id="materiasAprob" step="1" min="0" max="50" required>
+            </div>
+            <div>
+                <label for="beca">¿Tiene beca?</label>
+                <input type="radio" id="becaSi" name="beca" value="si" required>
+                <label for="becaSi">Si</label>
+                <input type="radio" id="becaNo" name="beca" value="no" required>
+                <label for="becaNo">No</label>
+            </div>
+
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="resultado"> </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
