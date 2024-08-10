@@ -7,3 +7,17 @@ const productos = [
 ];
 const productsMayor0 = productos.filter((producto)=> producto.stock > 0 );
 console.log(productsMayor0);
+
+//Utilizando map, genera un nuevo array con solo los nombres de los productos, ejemplo ["Camiseta", "Pantalón", "Zapatos", "Bufanda" ]
+
+const nombresProductos = productos.map((producto) => producto.nombre)
+console.log(nombresProductos)
+
+//Escribe un programa que calcule el precio total de los productos disponibles, para ello debes recorrer todos los productos y obtener la suma de el precio de todos ellos
+
+let total = 0;
+productos.forEach((producto) => {
+    total += producto.precio;
+});
+console.log(total)
+
