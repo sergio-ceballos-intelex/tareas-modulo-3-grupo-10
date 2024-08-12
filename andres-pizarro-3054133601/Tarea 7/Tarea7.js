@@ -7,8 +7,8 @@ const productos = [
     { nombre: "Bufanda", precio: 15, stock: 8 },
 ];
 
-const productEqStkZero = productos.filter(prod=>prod.stock==0);
-console.log(productEqStkZero);
+const productInStock = productos.filter(prod=>prod.stock>0);//CORRECCIÓN REALIZADA, SE CAMBIA EL RELACIONAL == POR >
+console.log(productInStock);
 
 const productsName = productos.map(prod=>prod.nombre);
 console.log(productsName);
@@ -41,14 +41,14 @@ console.log("////////// FIN PUNTO 2 //////////");
 console.log("////////// INICIO PUNTO 3 //////////");
 let ageSum = 0;
 let stats = [];
-estudiantes.forEach((stu,ind)=>{
+estudiantes.forEach((stu)=>{
     ageSum += stu.edad;    
-    if(ind==estudiantes.length-1){
-        let ageAvg = ageSum/estudiantes.length;
-        stats.push(ageSum);
-        stats.push(ageAvg);
-    }
 });
+
+//CORRECCIÓN REALIZADA, SE SACA DEL LOOP ESTE PROCESO QUE SE PUEDE REALIZAR FUERA 
+let ageAvg = ageSum/estudiantes.length;
+stats.push(ageSum);
+stats.push(ageAvg);
 
 console.log(`La edad total de los ${estudiantes.length} estudiantes es ${stats[0]} años con un promedio de edad de ${stats[1]} años`);
 console.log("////////// FIN PUNTO 3 //////////");
@@ -116,9 +116,11 @@ estudiantes = [
 
 const highestAvg = Math.max(...estudiantes.map(e => e.promedio));
 
-const highestAvgStd = estudiantes.filter(std => std.promedio == highestAvg);
+const highestAvgStd = estudiantes.find(std => std.promedio === highestAvg);
+//CORRECCIÓN REALIZADA, SE CAMBIA EL RELACIONAL == POR ===, ADEMAS SE CAMBIA EL METODO FILTER POR FIND 
+//PARA NO TRABAJAR CON JSON's DENTRO DE ARRAY SINO CON EL JSON DIRECTAMENTE
 
-console.log(`${highestAvgStd.genero=='Masculino' ? "El" : "La"} estudiante con mayor promedio es ${highestAvgStd[0].nombre} con ${highestAvgStd[0].promedio}`);
+console.log(`${highestAvgStd.genero=='Masculino' ? "El" : "La"} estudiante con mayor promedio es ${highestAvgStd.nombre} con ${highestAvgStd.promedio}`);
 
 const estudiantesMayores = estudiantes.filter(std => std.edad>20);
 
