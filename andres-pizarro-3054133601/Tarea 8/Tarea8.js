@@ -87,13 +87,15 @@ function printMessage(message){
 }
 
 function suspenseDots(duration){
-    const interval = 300;
+    let interval = 300;
     let dots = '';
+    let perc = 0;
     const maxDots = 3;
 
     const intervalId = setInterval(() => {
-        dots = dots.length < maxDots ? dots + '.' : '';
-        process.stdout.write('\r' + dots);
+        dots = dots + '.';
+        perc += interval; 
+        process.stdout.write('\r' + `${((perc/duration)*100).toFixed()}%` + dots);        
     }, interval);
 
     setTimeout(() => {
