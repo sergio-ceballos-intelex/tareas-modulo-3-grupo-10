@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="text/javascript" src="./js/controller.js"></script>
+    <title>Tarea 5</title>
+</head>
+<body>
+    <h2>Calculadora</h2>
+    <div>
+        <form id="form_calculator" action="">
+            <input id="number1" class="numberInp" type="number" placeholder="Ingresa un número">
+            <br>
+            <input id="number2" class="numberInp" type="number" placeholder="Ingresa otro número">
+            <br>
+            <label>
+                <input id="suma" type="radio" name="oper" value="suma" />
+                Suma
+            </label><br />
+            <label>
+                <input id="resta" type="radio" name="oper" value="resta" />
+                Resta
+            </label><br />
+            <label>
+                <input id="multi" type="radio" name="oper" value="multi" />
+                Multiplicación
+            </label><br />
+            <label>
+                <input id="divi" type="radio" name="oper" value="divi" />
+                División
+            </label><br />
+            <button onclick="calcular()" type="button">Calculate</button>
+            <br>
+            <label id="result" for="">...</label>
+        </form>
+    </div>
+    
+    <hr>
+    <hr>
+
+    <h2>Sistema de Gestión de Registro de Estudiantes</h2>
+
+    <div class="container">
+        
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Edad:</label>
+                <input type="number" id="age" name="age" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="average">Promedio:</label>
+                <input type="number" id="average" name="average" min="0" max="10" step="0.1" required>
+            </div>
+            <div class="form-group">
+                <label for="isRegular">¿Es regular?</label>
+                <input type="checkbox" id="isRegular" name="isRegular">
+            </div>
+            <div class="form-group">
+                <label for="approvedSubjects">Cantidad de materias aprobadas:</label>
+                <input type="number" id="approvedSubjects" name="approvedSubjects" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="isScholarship">¿Es becado?</label>
+                <input type="checkbox" id="isScholarship" name="isScholarship">
+            </div>
+            <button type="button" onclick="validateStudent()">Validar estaudiante</button>
+        </form>
+        <div id="resultStudent" class="result">...</div>
+    </div>
+
+    <h2>Resolver las expresiones</h3>
+
+    <div id="exp1">
+        <div id="display_exp">
+            <label for="">true || true || false && true || false && true && true || false</label>
+            <button id="btnSolv1" onclick="solve1()">Solve</button>
+        </div>
+        <label id="solv1">Evaluamos las operaciones && primero: <br>
+            false && true es false <br>
+            false && true es false <br>
+            false && true es false <br>
+            La expresión se simplifica a: <br>
+            true || true || false || false || false <br>
+            Evaluamos las operaciones ||: <br>
+            true || true es true <br>
+            true || false es true <br>
+            true || false es true <br>
+            true || false es true <br>
+            Resultado final: <br>
+            true <br>            
+        </label>
+    </div>
+
+    <div id="exp2">
+        <div id="display_exp">
+            <label for="">true && (false || false && (true && (true || false && true))) || false && (true || false)</label>
+            <button id="btnSolv2" onclick="solve2()">Solve</button>
+        </div>
+        <label id="solv2">
+            Evaluamos las operaciones && dentro de los paréntesis: <br>
+            false && (true && (true || false && true)) <br>
+            false && true es false <br>
+            true || false es true <br>
+            La expresión dentro del primer paréntesis es: <br>
+            false || (true) <br>
+            Evaluamos el primer paréntesis: <br>
+            false || true es true <br>
+            Entonces tenemos: <br>
+            true && true || false && (true || false) <br>
+            Evaluamos el segundo paréntesis: <br>
+            true || false es true <br>
+            Entonces tenemos: <br>
+            true && true || false && true <br>
+            Evaluamos las operaciones &&: <br>
+            true && true es true <br>
+            false && true es false <br>
+            La expresión se simplifica a: <br>
+            true || false <br>
+            Evaluamos la operación ||: <br>
+            true || false es true <br>
+            Resultado final: <br>
+            true <br>
+        </label>
+    </div>
+
+    <div id="exp3">
+        <div id="display_exp">
+            <label for="">!(!true && (false || false && !!!true || (true && !false))) || false && true</label>
+            <button id="btnSolv3" onclick="solve3()">Solve</button>
+        </div>
+        <label id="solv3">
+            Evaluamos las operaciones ! y && dentro de los paréntesis:
+            !!!true es true <br>
+            false && true es false <br>
+            true && !false es true <br>
+            La expresión se simplifica a: <br>
+            !(!true && (false || false || true)) <br>
+            Evaluamos las operaciones ||: <br>
+            false || false || true es true <br>
+            La expresión se simplifica a: <br>
+            !(!true && true) <br>
+            Evaluamos las operaciones &&: <br>
+            !true es false <br>
+            false && true es false <br>
+            La expresión se simplifica a: <br>
+            !false <br>
+            Evaluamos la operación !: <br>
+            !false es true <br>
+            Resultado final: <br>
+            true <br>
+        </label>
+    </div>
+
+    
+    
+    
+    
+</body>
+</html>
