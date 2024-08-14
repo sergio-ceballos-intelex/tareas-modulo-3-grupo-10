@@ -60,8 +60,3 @@
 // }
 // console.log (frutas1);
 
-
-
-
-
-
