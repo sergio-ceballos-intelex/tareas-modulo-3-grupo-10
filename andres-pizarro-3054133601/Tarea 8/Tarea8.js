@@ -46,40 +46,40 @@ filtrarPares(numeros, mostrarPares);
 
 console.log("Estoy en Bogota");
 
-const flightBOG_MAD = (callback,callback2,callback3) => {
-    callback2("Volando Bogota-Madrid");
-    callback3(7000);
+const flightBOG_MAD = (callback) => {
+    printMessage("Volando Bogota-Madrid");
+    suspenseDots(7000);
     setTimeout(() => {
-        callback2("Vuelo Bogota - Madrid, me demoré 7 horas")
-        callback2("Llegué a Madrid");
-        callback2("///////////////");
+        printMessage("Vuelo Bogota - Madrid, me demoré 7 horas")
+        printMessage("Llegué a Madrid");
+        printMessage("///////////////");
         callback();
     }, 7000);
 };
 
-const flightMAD_FRA = (callback,callback2,callback3) => {
-    callback2('Volando Madrid-Frankfurt');
-    callback3(2000);
+const flightMAD_FRA = (callback) => {
+    printMessage('Volando Madrid-Frankfurt');
+    suspenseDots(2000);
     setTimeout(() => {
-        callback2("Vuelo Madrid - Frankfurt, me demoré 2 horas")
-        callback2("Llegué a Frankfurt");
-        callback2("///////////////");
+        printMessage("Vuelo Madrid - Frankfurt, me demoré 2 horas")
+        printMessage("Llegué a Frankfurt");
+        printMessage("///////////////");
         callback();
     }, 2000);
 };
 
-const flightFRA_ICN = (callback2,callback3) => {
-    callback2('Volando Frankfurt-Seul');
-    callback3(10000);
+const flightFRA_ICN = () => {
+    printMessage('Volando Frankfurt-Seul');
+    suspenseDots(10000);
     setTimeout(() => {
-        callback2("Vuelo Frankfurt - Seul, me demoré 10 horas")
-        callback2("Llegué a Seul");
-        callback2("///////////////");
+        printMessage("Vuelo Frankfurt - Seul, me demoré 10 horas")
+        printMessage("Llegué a Seul");
+        printMessage("///////////////");
     }, 10000);
 };
 
 function travelBogSeul(){
-    flightBOG_MAD(()=>flightMAD_FRA(()=>flightFRA_ICN(printMessage,suspenseDots),printMessage,suspenseDots),printMessage,suspenseDots);
+    flightBOG_MAD(()=>flightMAD_FRA(()=>flightFRA_ICN()));
 }
 
 function printMessage(message){
