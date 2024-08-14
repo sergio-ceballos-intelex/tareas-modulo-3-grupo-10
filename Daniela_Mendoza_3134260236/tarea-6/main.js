@@ -75,3 +75,4 @@ for (let i = 0; i < frutas2.length; i++) {
 console.log(frutas1);
 
 
+
