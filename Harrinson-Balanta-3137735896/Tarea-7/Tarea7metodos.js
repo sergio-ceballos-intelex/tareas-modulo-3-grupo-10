@@ -1,4 +1,4 @@
-// // retornar la raiz cuadrada
+  // // retornar la raiz cuadrada
 // let  numbers1 = [21,33,40,50,71,70,742,80,90,100]
 // let valores = numbers1.map((numero => numero * numero))
 // console.log(valores)
