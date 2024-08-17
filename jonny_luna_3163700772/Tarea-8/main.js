@@ -69,31 +69,31 @@ function mostrarPares(numerosPares) {
 
   //Hacer un programa que simule un vuelo desde Colombia hasta Corea del Sur respetando el orden de los vuelos:
   
-const bog_mad = (callback1, callback2) => {
+const bog_mad = (callback) => {
   const bog = console.log("Estoy en Bogotá"); 
-  setTimeout(() => {console.log("Vuelo Bogotá - Madrid, me demoré 7 horas")
+  setTimeout(() => {console.log("Vuelo Bogotá - Madrid, me demoré 7 horas");
     console.log("Llegué a madrid");
-    callback1();
-    callback2();
+    callback();
   }, 7000);
-  
 }  
 
-const mad_fkf = () => {
-  setTimeout(() => {console.log("Vuelo Madrid - Frankfurt, me demoré 2 horas")
+const mad_fkf = (callback) => {
+  setTimeout(() => {console.log("Vuelo Madrid - Frankfurt, me demoré 2 horas");
     console.log("Llegué a Frankfurt");
+    callback();
   }, 2000);
-  
 }
 
 const fkf_seul = () => {
-  setTimeout(() => {console.log("Vuelo Frankfurt - Seul, me demoré 10 horas")
+  setTimeout(() => {console.log("Vuelo Frankfurt - Seul, me demoré 10 horas");
     console.log("Llegué a Seul");
   }, 10000);
   
 }
 
-bog_mad(mad_fkf, fkf_seul);
+bog_mad(() => {
+  mad_fkf(fkf_seul);
+});
 
 
 
