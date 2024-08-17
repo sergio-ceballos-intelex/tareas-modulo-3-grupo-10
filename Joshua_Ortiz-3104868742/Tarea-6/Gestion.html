@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <h1>Registro de Estudiantes</h1>
+
+        <!-- Formulario actualizado para registro de estudiantes -->
+        <form onsubmit="event.preventDefault(); registrarEstudiante();">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" min="1" max="100"><br><br>
+            
+            <label for="promedio">Promedio (0 a 10):</label>
+            <input type="number" id="promedio" name="promedio" min="0" max="10" step="0.1"><br><br>
+            
+            <input type="checkbox" id="esRegular" name="esRegular">
+            <label for="esRegular">¿Es regular?</label><br><br>
+            
+            <label for="cantidadMateriasAprobadas">Cantidad de Materias Aprobadas:</label>
+            <input type="number" id="cantidadMateriasAprobadas" name="cantidadMateriasAprobadas" min="0"><br><br>
+            
+            <input type="checkbox" id="esBecado" name="esBecado">
+            <label for="esBecado">¿Es becado?</label><br><br>
+            
+            <input type="submit" value="Registrar">
+
+        </form>
+        
+        
+        <p id="mensaje"></p>
+        
+    </div>
+
+    <script src="./second.js"></script>
+</body>
+</html>
