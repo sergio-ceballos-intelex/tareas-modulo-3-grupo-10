@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Operaciones Básicas</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="calculadora">
+        <h1>Calculadora Básica</h1>
+
+        <!-- este metodo previene el comportamiento por defecto del formulario, que normalmente sería enviar los datos a una URL y recargar la página. Al evitar esto, podemos manejar la lógica de cálculo directamente en el lado del cliente sin recargar la página. -->
+
+        <form onsubmit="event.preventDefault(); calcular();">
+
+            <label for="primero">Número 1:</label>
+            <input type="text" id="primero" name="primero"><br><br>
+            
+            <label for="segundo">Número 2:</label>
+            <input type="text" id="segundo" name="segundo"><br><br>
+            
+            <label for="operacion">Operación (suma, resta, multiplicación, división):</label>
+            <input type="text" id="operacion" name="operacion"><br><br>
+            
+            <input type="submit" value="Calcular">
+        </form>
+        
+        <p id="resultado"></p>
+
+    </div>
+
+    <script src="./Task_1.js"></script>
+</body>
+</html>

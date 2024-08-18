@@ -18,3 +18,10 @@ for (let Inicia = 0; Inicia <= 2000; Inicia++){
 //     if (Contador % 2 === 0){console.log(Contador);}
     
 // }
+
+
+let frutas = ['fresa', 'Mora', 'papaya', 'sandia', 'manzana', 'guanabana'];
+
+for( let i = 0; i < frutas; i++){
+    const fruta = frutas[i];
+};
