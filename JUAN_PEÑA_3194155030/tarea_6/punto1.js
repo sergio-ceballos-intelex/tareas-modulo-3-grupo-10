@@ -8,4 +8,8 @@ for (let i=0; i<numeros.length; i++){
     resultados.push(operacion)
 }
 
+<<<<<<< HEAD
 console.log(resultados)
+=======
+console.log(resultados)
+>>>>>>> 46ace9be7393f2174fc4227255d955a05321f316
