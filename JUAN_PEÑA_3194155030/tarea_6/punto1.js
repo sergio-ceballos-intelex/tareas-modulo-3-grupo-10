@@ -5,7 +5,8 @@ for (let i=0; i<numeros.length; i++){
     const multiplicador= 2;
     const multiplicando = numeros [i]
     const operacion= multiplicando * multiplicador
-    resultados.push(operacion
+    resultados.push(operacion)
 }
 
+console.log(resultados)
 
