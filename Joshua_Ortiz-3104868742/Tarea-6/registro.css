@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3f4091;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.calculadora {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: -5%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"], input[type="number"]{
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Ocultar el checkbox predeterminado */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Crear un círculo personalizado */
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* Estilo del círculo */
+input[type="checkbox"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #020202;
+    background-color: rgb(216, 219, 196);
+}
+
+/* Estilo del círculo cuando el checkbox está seleccionado */
+input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+}
+
+[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #a09e45;
+}
+
+#resultado {
+    margin-top: 60px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 40px;
+    color: #333;
+    background-color: #aaaaa3;
+    border-radius: 4px;
+    border: #333;
+    padding-top: 15px;
+    border: #333 solid 2px;
+}
+
+/* #resultado p{
+    margin-top: 15px;
+    pa
+} */
