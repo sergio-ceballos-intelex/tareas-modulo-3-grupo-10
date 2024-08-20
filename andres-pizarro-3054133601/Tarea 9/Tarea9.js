@@ -94,7 +94,7 @@ function apigetTeamPlayers(codigoPais){
 
     const team = {};
 
-    team[playersByTeam[0].codigoPais] = playersName;
+    team[codigoPais] = playersName;
 
     return team;
 
