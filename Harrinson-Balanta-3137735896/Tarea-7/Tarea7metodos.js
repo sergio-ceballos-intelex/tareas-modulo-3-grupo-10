@@ -117,8 +117,11 @@ const estudiantes4 = [
   
 // Imprime en la consola el nombre y la edad del estudiante con el promedio más alto.
 
-const promedioalto = estudiantes4.filter(estudiantes4 => estudiantes4.promedio  >= 95 )
-console.log("este es el estudiante con el promedio más alto",promedioalto)
+const maxPromedio = Math.max(estudiantes4.map(estudiante => estudiante.promedio));
+const estudianteConPromedioMasAlto = estudiantes4.filter(estudiante => estudiante.promedio === maxPromedio);
+
+console.log("Este es el estudiante con el promedio más alto:", estudianteConPromedioMasAlto);
+
 // Filtra los estudiantes mayores de 20 años en un nuevo array llamado estudiantesMayores.
 const estudiantesMayores = estudiantes4.filter(estudiantes4 => estudiantes4.edad  > 20 )
 console.log("estos son los estudiantes mayores a 20 años",estudiantesMayores)
