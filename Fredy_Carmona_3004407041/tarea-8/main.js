@@ -79,9 +79,8 @@ function LleguéaSeul(callback) {
 
 estoyenbogota(() => {
     llegueamadrid(() => {
+        LleguéaFrankfurt(() => {
+            LleguéaSeul();
+        });
     });
-    LleguéaFrankfurt(() => {
-        LleguéaSeul();
-    });
-
 });
