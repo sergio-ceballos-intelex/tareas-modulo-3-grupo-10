@@ -116,5 +116,6 @@ function obtenerSelecciones() {
     .catch(error => {
       console.error(error);
     });
+    //Listo
 
 
