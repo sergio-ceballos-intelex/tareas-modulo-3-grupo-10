@@ -19,11 +19,11 @@
 
 // Punto 2: Acceso y Modificación Básica de Datos: Crea un array llamado estudiantes que contenga objetos representando a tres estudiantes. Ejemplo
 
-  const estudiantes = [
-      { nombre: "Camilo", edad: 33, promedio: 10 },
-      { nombre: "Juan", edad: 30, promedio: 6 },
-      { nombre: "Andres", edad: 29, promedio: 8.7 },
- ];
+//   const estudiantes = [
+//       { nombre: "Camilo", edad: 33, promedio: 10 },
+//       { nombre: "Juan", edad: 30, promedio: 6 },
+//       { nombre: "Andres", edad: 29, promedio: 8.7 },
+//  ];
 // estudiantes[1].nombre
 //console.log(estudiantes[1].nombre)
 //estudiantes[0].edad = 25
@@ -45,64 +45,64 @@
 // console.log(calcularpromedio);
 
 //Punto 4: Búsqueda y Filtrado de Datos: Utiliza filter para encontrar al estudiante con el promedio más alto en el array.
-const estudiantes4 = [
-    {
-      nombre: "Ana",
-      edad: 20,
-      promedio: 85,
-      genero: "Femenino",
-      carrera: "Ingeniería Civil",
-      ciudad: "Bogotá",
-    },
-    {
-      nombre: "Juan",
-      edad: 22,
-      promedio: 78,
-      genero: "Masculino",
-      carrera: "Medicina",
-      ciudad: "Medellín",
-    },
-    {
-      nombre: "María",
-      edad: 21,
-      promedio: 90,
-      genero: "Femenino",
-      carrera: "Administración de Empresas",
-      ciudad: "Cali",
-    },
-    {
-      nombre: "Pedro",
-      edad: 23,
-      promedio: 82,
-      genero: "Masculino",
-      carrera: "Derecho",
-      ciudad: "Barranquilla",
-    },
-    {
-      nombre: "Laura",
-      edad: 24,
-      promedio: 88,
-      genero: "Femenino",
-      carrera: "Arquitectura",
-      ciudad: "Cartagena",
-    },
-    {
-      nombre: "Carlos",
-      edad: 20,
-      promedio: 75,
-      genero: "Masculino",
-      carrera: "Ingeniería de Sistemas",
-      ciudad: "Santa Marta",
-    },
-    {
-      nombre: "Sofía",
-      edad: 22,
-      promedio: 95,
-      genero: "Femenino",
-      carrera: "Psicología",
-      ciudad: "Pereira",
-    },
-  ];
+// const estudiantes4 = [
+//     {
+//       nombre: "Ana",
+//       edad: 20,
+//       promedio: 85,
+//       genero: "Femenino",
+//       carrera: "Ingeniería Civil",
+//       ciudad: "Bogotá",
+//     },
+//     {
+//       nombre: "Juan",
+//       edad: 22,
+//       promedio: 78,
+//       genero: "Masculino",
+//       carrera: "Medicina",
+//       ciudad: "Medellín",
+//     },
+//     {
+//       nombre: "María",
+//       edad: 21,
+//       promedio: 90,
+//       genero: "Femenino",
+//       carrera: "Administración de Empresas",
+//       ciudad: "Cali",
+//     },
+//     {
+//       nombre: "Pedro",
+//       edad: 23,
+//       promedio: 82,
+//       genero: "Masculino",
+//       carrera: "Derecho",
+//       ciudad: "Barranquilla",
+//     },
+//     {
+//       nombre: "Laura",
+//       edad: 24,
+//       promedio: 88,
+//       genero: "Femenino",
+//       carrera: "Arquitectura",
+//       ciudad: "Cartagena",
+//     },
+//     {
+//       nombre: "Carlos",
+//       edad: 20,
+//       promedio: 75,
+//       genero: "Masculino",
+//       carrera: "Ingeniería de Sistemas",
+//       ciudad: "Santa Marta",
+//     },
+//     {
+//       nombre: "Sofía",
+//       edad: 22,
+//       promedio: 95,
+//       genero: "Femenino",
+//       carrera: "Psicología",
+//       ciudad: "Pereira",
+//     },
+//   ];
 
 
   
@@ -118,5 +118,7 @@ const estudiantes4 = [
 
 // // Imprime en la consola la información completa de los estudiantes mayores de 20 años.
 
-const estudiantesMayores1 = estudiantes4.filter(estudiantes4 => estudiantes4.edad  >= 20 )
-console.log(estudiantesMayores1)
+// const estudiantesMayores1 = estudiantes4.filter(estudiantes4 => estudiantes4.edad  >= 20 )
+// console.log(estudiantesMayores1)
+
+
