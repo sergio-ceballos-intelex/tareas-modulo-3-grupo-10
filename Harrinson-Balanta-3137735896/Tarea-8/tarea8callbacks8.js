@@ -25,18 +25,18 @@
 // console.log(numerosPares); 
 
 //  3. Descripción: Creea una función en JavaScript que filtre los números pares de un array y utilicen un callback para manejar el resultado.
-function filtrarPares(numeros, callback) {
-    const numerospares = numeros.filter(function(numero) {
-      return numero % 2 === 0;
-    });
-    callback(numerospares);
-  }
-    
-  function mostrarPares(numerospares) {
-    console.log('estos son los numeros pares:', numerospares);
-  }
-    const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    filtrarPares(numeros, mostrarPares);
+// function filtrarPares(numeros, callback) {
+//   const numerospares = numeros.filter(function (numero) {
+//     return numero % 2 === 0;
+//   });
+//   callback(numerospares);
+// }
+
+// function mostrarPares(numerospares) {
+//   console.log('estos son los numeros pares:', numerospares);
+// }
+// const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// filtrarPares(numeros, mostrarPares);
 
 // // Llamar a la función filtrarPares y pasar el callback mostrarPares
 // filtrarPares(numeros, mostrarPares);
@@ -50,36 +50,34 @@ function filtrarPares(numeros, callback) {
 // Vuelo Frankfurt - Seul: 10000ms (10 horas)
 // Llegada a Seul
 
-// function estoyenbogota(callback) {
-//     setTimeout(() => {
-//         console.log('vuelo bogota madrid');
-//         callback();
-//     }, 7000);
-// }
-// function llegueamadrid(callback) {
-//     setTimeout(() => {
-//         console.log('Llegué a Madrid');
-//         callback();
-//     }, 2000);
-// }
-// function LleguéaFrankfurt(callback) {
-//     setTimeout(() => {
-//         console.log('Llegué a Frankfurt');
-//         callback();
-//     }, 10000);
-// }
-// function LleguéaSeul(callback) {
-//     console.log('Llegué a Seul');
+function estoyenbogota(callback) {
+  setTimeout(() => {
+    console.log('vuelo bogota madrid');
+    callback();
+  }, 7000);
+}
+function llegueamadrid(callback) {
+  setTimeout(() => {
+    console.log('Llegué a Madrid');
+    callback();
+  }, 2000);
+}
+function LleguéaFrankfurt(callback) {
+  setTimeout(() => {
+    console.log('Llegué a Frankfurt');
+    callback();
+  }, 10000);
+}
+function LleguéaSeul(callback) {
+  console.log('Llegué a Seul');
 
 
-// }
+}
 
-// estoyenbogota(() => {
-//     llegueamadrid(() => {
-//     });
-//     LleguéaFrankfurt(() => {
-//         LleguéaSeul ();
-//     });
-
-
-// });
+estoyenbogota(() => {
+  llegueamadrid(() => {
+    LleguéaFrankfurt(() => {
+      LleguéaSeul();
+    });
+  });
+});
